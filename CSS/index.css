@@ -13,12 +13,10 @@
 
 body{
 	margin: 0px;
-}
-
-.nav-container{
-	background-color: red;
-	margin-right: auto;
-	margin-left: auto;
+    background: url("../Images/intro-bg.jpg") no-repeat bottom center fixed;
+    background-color: #000;
+    color : white;
+    text-align: center;
 }
 
 .nav-container div{
@@ -36,23 +34,15 @@ body{
 
 .navbar-right{
 	font-family:cursive;
-	font-size: 25px;
+	font-size: 22px;
 	padding: 20px 50px 0px 0px;
 	float: right;
 }
 
 .navbar-right a{
+    text-decoration: none;
 	color: #42dca3;
-} 
-
-.navbar-fixed-top{
-	position: fixed;
-	top: 0px;
-	width: 100%;
-}
-
-.navbar-right a{
-	float: left;
+    float: left;
 	padding: 10px;
 }
 
@@ -60,14 +50,17 @@ body{
 	opacity: 0.6;
 }
 
-.navbar-right a{
-	text-decoration: none;
+.navbar-fixed-top{
+	position: fixed;
+	top: 0px;
+	width: 100%;
 }
 
 .navbar-fixed-custom {
 	background: black;
 	transition: background .8s ease-in-out; 
 	border-bottom: 1px solid #42dca3;
+    z-index: 1;
 }
 
 .navbar-fixed-custom .navbar-element{
@@ -75,47 +68,16 @@ body{
 	transition: padding .5s ease-in-out; 
 }
 
-.display-desktop-view{
-	width: 100%;
-	height: 700px;
-}
-
-section:nth-child(even){
-	background-color: #000;
-}
-
-section:nth-child(odd){
-	background-color: #000;
-}
-
-.section-title{
-	padding: 60px 0px 0px 0px;
-	font-family: Georgia, serif;
-    font-size: 40px;
-    color: #fff;
-    text-align: center;
-}
-
-.introduction-section{
-	background: url("../Images/intro-bg.jpg") no-repeat bottom center scroll;
+section{
+    display: block;
 }
 
 .introduction-container{
-	width: 1170px;
-}
-
-.introduction-container{
-	margin: auto;
-	padding-top: 110px;
-}
-
-#introduction h1, #introduction .introduction-subtitle, #contact .contact-details{
-	text-align: center;
-	color: #fff;
-	margin: 0px;
+	padding-top: 130px;
 }
 
 #introduction h1{
+    margin: 0px;
 	font-size: 70px;
 	text-transform: uppercase;
 }
@@ -125,9 +87,12 @@ section:nth-child(odd){
 }
 
 .btn-circle {
+    height: 65px;
+    width: 65px;
+    box-sizing: border-box;
 	display: inline-block;
     margin-top: 70px;
-    padding: 7px 16px;
+    padding-top: 10px;
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
@@ -143,43 +108,79 @@ section:nth-child(odd){
     margin: auto;
 }
 
-.technical-element{
-	padding: 30px;
-	vertical-align: top;
+.display-desktop-view{
+	width: 100%;
+	min-height: 700px;
 }
 
-.block-title{
-	font-family: cursive;
-	font-size: 30px;
-	padding: 0px 30px;
-	vertical-align: inherit;
-	min-width: 150px;
-	background: #F18D05;
-	border-radius: 10px;
+.section-title{
+	padding: 60px 0px 0px 0px;
+	font-family: Georgia, serif;
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    clear: both;
 }
 
-.rectangle{
-	display: inline-block;
-    line-height: 30px;
-    font-size: 25px;
-    padding: 10px;
-    background-color: #00A1CB;
-    border-radius: 10px;
-    margin-left: 10px;
+.technical-container{
+    padding: 50px 70px 0px 70px;
 }
 
-.rectangle:first-child{
-	margin-left: 20px;
+#go-to-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #42dca3;
+    text-decoration: none;
+}
+
+#go-to-top i{
+	margin-left: 10px;
+}
+
+.custom-arraow-up{
+	font-size: 48px;
+    line-height: 48px;
+    padding: 2px;
+}
+
+.career-element{
+    max-width: 80%;
+    margin: auto;
+}
+
+.career-element-logo{
+    box-shadow: 0 0px 43px 0px rgba(0, 0, 0, 0.59);
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-size: 80% 80%;
+    border-radius: 142px;
+    background-color: white;
+}
+
+.career-element-desc{
+    max-width: 75%;
+    margin:auto;
+    vertical-align: top;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #dddddd;
 }
 
 .hobbies-container{
-	padding-left: 50px;
+    padding-top: 100px;
 }
 
+
 .hobby-element{
-	box-shadow: 0 18px 25px -6px black;
+	box-shadow: 0 0px 25px -6px black;
 	vertical-align: middle;
 	-webkit-transition: all 0.6s;
+}
+
+.hobby-element img{
+	padding: 10px;
 }
 
 .hobby-element:nth-child(odd), .hobby-element:nth-child(even):hover{
@@ -196,31 +197,162 @@ section:nth-child(odd){
     -ms-transform: rotate(9deg);
 }
 
-#go-to-top{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    color: #42dca3;
-    text-decoration: none;
+@media only screen and (max-width: 1028px){
+    .navbar-element{
+        box-sizing: border-box;
+        width: 60%;
+        padding: 10px 0px 0px 0px;
+        float: none;
+        margin: auto;
+    } 
+    
+    .navbar-right{
+        width: inherit;
+	    font-size: 18px;
+    }
+    
+    .navbar-header{
+        font-size: 26px;
+    }
+    
+    #introduction h1{
+        font-size: 45px;
+    }
+    
+    #introduction .introduction-subtitle{
+        font-size: 24px;
+    }
+    
+    .btn-circle{
+        font-size: 30px;
+    }
+    
+    .section-title{
+        padding: 100px 0px 0px 0px;
+        font-size: 40px;
+    }
+    
+    .custom-arraow-up{
+	    font-size: 44px;
+        line-height: 44px;
+    }
+
 }
 
-#go-to-top i{
-	margin-left: 10px;
+@media only screen and (max-width: 750px){
+    .hobby-element, .hobby-element img{
+        max-width: 65%;
+    }
+    
+    .hobby-element img{
+        padding: 0px;
+    }
 }
 
-.custom-arraow-up{
-	font-size: 48px!important;
-    line-height: 48px!important;
-    padding: 2px;
+@media only screen and (max-width: 610px){
+    .hobby-element{
+        margin-top: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 678px){
+    .navbar-right{
+        font-size: 16px;
+    }
+    
+    .navbar-header{
+        font-size: 22px;
+    }
+    
+    #introduction h1{
+        font-size: 40px;
+    }
+    
+    #introduction .introduction-subtitle{
+        font-size: 22px;
+    }
+    
+    .btn-circle{
+        font-size: 25px;
+    }
+    
+    .section-title{
+        font-size: 35px;
+    }
+    
+    .career-element-desc{
+        max-width: 85%;
+        padding: 0px;
+        font-size: 19px;
+    }
+    
+    .custom-arraow-up{
+	    font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 510px){
+    .navbar-right{
+        font-size: 12px;
+    }
+    .navbar-header{
+        font-size: 20px;
+    }
+    
+    #introduction h1{
+        font-size: 35px;
+    }
+    
+    #introduction .introduction-subtitle{
+        font-size: 18px;
+    }
+    
+    .btn-circle{
+        height: 45px;
+        width: 45px; 
+        font-size: 20px;
+    }
+    
+    .section-title{
+        font-size: 30px;
+    }
+    
+    .technical-container{
+        width: 80%;
+        padding: 0;
+        padding-top: 50px;
+        margin: auto;
+    }
+    
+    .career-element-desc{
+        max-width: 100%;
+        font-size: 18px;
+    }
+    
+    #contact .contact-details{
+        font-size: 20px
+    }
+    
+    .custom-arraow-up{
+	    font-size: 36px;
+        line-height: 36px;
+    }
+}
+
+.adp{
+    background: url("../Images/ADP_Logo.png") no-repeat center;
+}
+
+.cdk{
+    background: url("../Images/CDK_Logo.png") no-repeat center;
 }
 
 #contact{
 	padding-top: 100px;
-	height: 500px;
-}
-.contact-container{
-	height: inherit;
-	background: url("../Images/contact-me.jpg") no-repeat top center scroll;
+	min-height: 600px !important;
 }
 
 .contact-details{
@@ -230,4 +362,9 @@ section:nth-child(odd){
 .contact-details a{
 	text-decoration: none;
     color: #42dca3;
+}
+
+
+.career-period {
+        color: #42dca3;
 }

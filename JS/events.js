@@ -44,7 +44,7 @@
 			go_to_top.removeClass(hide_class);
 		}else{
 			navbar.removeClass(fixed_custom_navbar_class);
-			navbar_header.html("<i class='fa fa-hand-paper-o'></i>Welcome to my site");
+            navbar_header.html("");
 			go_to_top.addClass(hide_class);
 		}
 	}
