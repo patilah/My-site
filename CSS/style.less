@@ -1,0 +1,9 @@
+.loop(@counter) when (@counter <= 100) {
+    @counter%   {-webkit-transform: rotate(-9deg);top:2px;}
+    // next iteration
+    .loop((@counter + 1));
+}
+
+@-webkit-keyframes balloon1 {
+    .loop(0); // launch the loop   
+}

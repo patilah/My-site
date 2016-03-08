@@ -1,0 +1,718 @@
+
+.balloon{
+  width:104px;
+  height:124px; 
+  float: left;
+  display: inline-block;
+  text-align:center;
+  border-radius:80% 80% 80% 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.balloon .balloon-title{
+    padding: 40px 10px;
+}
+
+.balloon1 {
+  background: rgba(90, 93, 87, 0.7);
+  -webkit-animation: balloon1 4s ease infinite alternate;
+  padding:10px;
+  -webkit-transform-origin: bottom center; 
+}
+.balloon2 {
+  background: rgba(126, 110, 101, 0.7);
+  -webkit-animation: balloon2 4s ease infinite;
+  padding:10px;
+  -webkit-transform-origin: bottom center; 
+}
+
+.balloon3 {
+  background: rgba(90, 93, 87, 0.7);
+  -webkit-animation: balloon3 10s ease infinite;
+  padding:10px;
+  -webkit-transform-origin: bottom center; 
+}
+
+
+.balloon4 {
+  background: rgba(90, 93, 87, 0.7);
+  -webkit-animation: balloon4 20s ease infinite;
+  padding:10px;
+  -webkit-transform-origin: bottom center; 
+}
+
+
+.balloon5 {
+  background: rgba(90, 93, 87, 0.7);
+  -webkit-animation: balloon5 7s ease infinite;
+    top: 2px;
+  padding:10px;
+  -webkit-transform-origin: bottom center; 
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes balloon1 {
+    0%   {-webkit-transform: rotate(-9deg);top:2px;}
+    5%  {-webkit-transform: rotate(-7deg);top:4px;}
+    10%  {-webkit-transform: rotate(-5deg);top:6px;}
+    15%  {-webkit-transform: rotate(-3deg);top:8px;}
+    20% {-webkit-transform: rotate(-1deg);top:10;px}
+    25%   {-webkit-transform: rotate(0deg);top:12px;}
+    30%  {-webkit-transform: rotate(1deg);top:14px;}
+    35%  {-webkit-transform: rotate(3deg);top:16px;}
+    40%  {-webkit-transform: rotate(5deg);top:18px;}
+    45% {-webkit-transform: rotate(7deg);top:20px;}
+    50%   {-webkit-transform: rotate(9deg);top:19px;}
+    55%  {-webkit-transform: rotate(10deg);top:18px;}
+    60%  {-webkit-transform: rotate(11deg);top:16px;}
+    65%  {-webkit-transform: rotate(12deg);top:14px;}
+    70% {-webkit-transform: rotate(13deg);top:12px;}
+    75%   {-webkit-transform: rotate(14deg);top:10px;}
+    80%  {-webkit-transform: rotate(15deg);top:8px;}
+    85%  {-webkit-transform: rotate(16deg);top:6px;}
+    90%  {-webkit-transform: rotate(17deg);top:4px;}
+    95% {-webkit-transform: rotate(18deg);top:2px;}
+    100% {-webkit-transform: rotate(19deg);top:0px;}
+}
+
+/* Standard syntax */
+@keyframes balloon1 {
+    0%   {-webkit-transform: rotate(-9deg);top:2px;}
+    5%  {-webkit-transform: rotate(-7deg);top:4px;}
+    10%  {-webkit-transform: rotate(-5deg);top:6px;}
+    15%  {-webkit-transform: rotate(-3deg);top:8px;}
+    20% {-webkit-transform: rotate(-1deg);top:10;px}
+    25%   {-webkit-transform: rotate(0deg);top:12px;}
+    30%  {-webkit-transform: rotate(1deg);top:14px;}
+    35%  {-webkit-transform: rotate(3deg);top:16px;}
+    40%  {-webkit-transform: rotate(5deg);top:18px;}
+    45% {-webkit-transform: rotate(7deg);top:20px;}
+    50%   {-webkit-transform: rotate(9deg);top:19px;}
+    55%  {-webkit-transform: rotate(10deg);top:18px;}
+    60%  {-webkit-transform: rotate(11deg);top:16px;}
+    65%  {-webkit-transform: rotate(12deg);top:14px;}
+    70% {-webkit-transform: rotate(13deg);top:12px;}
+    75%   {-webkit-transform: rotate(14deg);top:10px;}
+    80%  {-webkit-transform: rotate(15deg);top:8px;}
+    85%  {-webkit-transform: rotate(16deg);top:6px;}
+    90%  {-webkit-transform: rotate(17deg);top:4px;}
+    95% {-webkit-transform: rotate(18deg);top:2px;}
+    100% {-webkit-transform: rotate(19deg);top:0px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes balloon2 {
+    0%   {-webkit-transform: rotate(9deg);top:2px;}
+    5%  {-webkit-transform: rotate(7deg);top:4px;}
+    10%  {-webkit-transform: rotate(5deg);top:6px;}
+    15%  {-webkit-transform: rotate(3deg);top:8px;}
+    20% {-webkit-transform: rotate(1deg);top:10;px}
+    25%   {-webkit-transform: rotate(0deg);top:12px;}
+    30%  {-webkit-transform: rotate(-1deg);top:14px;}
+    35%  {-webkit-transform: rotate(-3deg);top:16px;}
+    40%  {-webkit-transform: rotate(-5deg);top:18px;}
+    45% {-webkit-transform: rotate(-7deg);top:20px;}
+    50%   {-webkit-transform: rotate(-9deg);top:19px;}
+    55%  {-webkit-transform: rotate(-8deg);top:18px;}
+    60%  {-webkit-transform: rotate(-7deg);top:16px;}
+    65%  {-webkit-transform: rotate(-5deg);top:14px;}
+    70% {-webkit-transform: rotate(-3deg);top:12px;}
+    75%   {-webkit-transform: rotate(-1deg);top:10px;}
+    80%  {-webkit-transform: rotate(1deg);top:8px;}
+    85%  {-webkit-transform: rotate(3deg);top:6px;}
+    90%  {-webkit-transform: rotate(5deg);top:4px;}
+    95% {-webkit-transform: rotate(7deg);top:2px;}
+    100% {-webkit-transform: rotate(9deg);top:0px;}
+}
+
+/* Standard syntax */
+@keyframes balloon2 {
+    0%   {-webkit-transform: rotate(9deg);top:2px;}
+    5%  {-webkit-transform: rotate(7deg);top:4px;}
+    10%  {-webkit-transform: rotate(5deg);top:6px;}
+    15%  {-webkit-transform: rotate(3deg);top:8px;}
+    20% {-webkit-transform: rotate(1deg);top:10;px}
+    25%   {-webkit-transform: rotate(0deg);top:12px;}
+    30%  {-webkit-transform: rotate(-1deg);top:14px;}
+    35%  {-webkit-transform: rotate(-3deg);top:16px;}
+    40%  {-webkit-transform: rotate(-5deg);top:18px;}
+    45% {-webkit-transform: rotate(-7deg);top:20px;}
+    50%   {-webkit-transform: rotate(-9deg);top:19px;}
+    55%  {-webkit-transform: rotate(-8deg);top:18px;}
+    60%  {-webkit-transform: rotate(-7deg);top:16px;}
+    65%  {-webkit-transform: rotate(-5deg);top:14px;}
+    70% {-webkit-transform: rotate(-3deg);top:12px;}
+    75%   {-webkit-transform: rotate(-1deg);top:10px;}
+    80%  {-webkit-transform: rotate(1deg);top:8px;}
+    85%  {-webkit-transform: rotate(3deg);top:6px;}
+    90%  {-webkit-transform: rotate(5deg);top:4px;}
+    95% {-webkit-transform: rotate(7deg);top:2px;}
+    100% {-webkit-transform: rotate(9deg);top:0px;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes balloon3 {
+    0%   {-webkit-transform: rotate(1deg);top:1px;}
+    2%   {-webkit-transform: rotate(3deg);top:2px;}
+    4%   {-webkit-transform: rotate(5deg);top:3px;}
+    6%   {-webkit-transform: rotate(7deg);top:4px;}
+    8%   {-webkit-transform: rotate(9deg);top:5px;}
+    10%   {-webkit-transform: rotate(11deg);top:6px;}
+    12%   {-webkit-transform: rotate(13deg);top:7px;}
+    14%   {-webkit-transform: rotate(15deg);top:8px;}
+    16%   {-webkit-transform: rotate(17deg);top:9px;}
+    18%   {-webkit-transform: rotate(19deg);top:10px;}
+    19%   {-webkit-transform: rotate(21deg);top:11px;}
+    20%   {-webkit-transform: rotate(23deg);top:12px;}
+    22%   {-webkit-transform: rotate(25deg);top:13px;}
+    24%   {-webkit-transform: rotate(27deg);top:14px;}
+    26%   {-webkit-transform: rotate(25deg);top:13px;}
+    28%   {-webkit-transform: rotate(23deg);top:11px;}
+    30%   {-webkit-transform: rotate(21deg);top:10px;}
+    32%   {-webkit-transform: rotate(19deg);top:9px;}
+    34%   {-webkit-transform: rotate(17deg);top:8px;}
+    36%   {-webkit-transform: rotate(15deg);top:7px;}
+    38%   {-webkit-transform: rotate(13deg);top:6px;}
+    40%   {-webkit-transform: rotate(11deg);top:5px;}
+    42%   {-webkit-transform: rotate(9deg);top:4px;}
+    44%   {-webkit-transform: rotate(7deg);top:3px;}
+    46%   {-webkit-transform: rotate(5deg);top:2px;}
+    48%   {-webkit-transform: rotate(3deg);top:1px;}
+    50%   {-webkit-transform: rotate(1deg);top:0px;}
+    52%   {-webkit-transform: rotate(-1deg);top:1px;}
+    54%   {-webkit-transform: rotate(-3deg);top:2px;}
+    56%   {-webkit-transform: rotate(-5deg);top:3px;}
+    58%   {-webkit-transform: rotate(-7deg);top:4px;}
+    60%   {-webkit-transform: rotate(-9deg);top:5px;}
+    62%   {-webkit-transform: rotate(-11deg);top:6px;}
+    64%   {-webkit-transform: rotate(-13deg);top:7px;}
+    66%   {-webkit-transform: rotate(-15deg);top:8px;}
+    68%   {-webkit-transform: rotate(-17deg);top:9px;}
+    70%   {-webkit-transform: rotate(-19deg);top:10px;}
+    72%   {-webkit-transform: rotate(-21deg);top:11px;}
+    74%   {-webkit-transform: rotate(-23deg);top:12px;}
+    76%   {-webkit-transform: rotate(-21deg);top:13px;}
+    78%   {-webkit-transform: rotate(-19deg);top:14px;}
+    80%   {-webkit-transform: rotate(-17deg);top:13px;}
+    82%   {-webkit-transform: rotate(-15deg);top:12px;}
+    84%   {-webkit-transform: rotate(-13deg);top:11px;}
+    86%   {-webkit-transform: rotate(-11deg);top:9px;}
+    88%   {-webkit-transform: rotate(-9deg);top:8px;}
+    90%   {-webkit-transform: rotate(-7deg);top:7px;}
+    92%   {-webkit-transform: rotate(-5deg);top:6px;}
+    94%   {-webkit-transform: rotate(-3deg);top:5px;}
+    96%   {-webkit-transform: rotate(-1deg);top:4px;}
+    98%   {-webkit-transform: rotate(0deg);top:3px;}
+    100%   {-webkit-transform: rotate(1deg);top:2px;}
+}
+
+/* Standard syntax */
+@keyframes balloon3 {
+    0%   {-webkit-transform: rotate(1deg);top:1px;}
+    2%   {-webkit-transform: rotate(3deg);top:2px;}
+    4%   {-webkit-transform: rotate(5deg);top:3px;}
+    6%   {-webkit-transform: rotate(7deg);top:4px;}
+    8%   {-webkit-transform: rotate(9deg);top:5px;}
+    10%   {-webkit-transform: rotate(11deg);top:6px;}
+    12%   {-webkit-transform: rotate(13deg);top:7px;}
+    14%   {-webkit-transform: rotate(15deg);top:8px;}
+    16%   {-webkit-transform: rotate(17deg);top:9px;}
+    18%   {-webkit-transform: rotate(19deg);top:10px;}
+    19%   {-webkit-transform: rotate(21deg);top:11px;}
+    20%   {-webkit-transform: rotate(23deg);top:12px;}
+    22%   {-webkit-transform: rotate(25deg);top:13px;}
+    24%   {-webkit-transform: rotate(27deg);top:14px;}
+    26%   {-webkit-transform: rotate(25deg);top:13px;}
+    28%   {-webkit-transform: rotate(23deg);top:11px;}
+    30%   {-webkit-transform: rotate(21deg);top:10px;}
+    32%   {-webkit-transform: rotate(19deg);top:9px;}
+    34%   {-webkit-transform: rotate(17deg);top:8px;}
+    36%   {-webkit-transform: rotate(15deg);top:7px;}
+    38%   {-webkit-transform: rotate(13deg);top:6px;}
+    40%   {-webkit-transform: rotate(11deg);top:5px;}
+    42%   {-webkit-transform: rotate(9deg);top:4px;}
+    44%   {-webkit-transform: rotate(7deg);top:3px;}
+    46%   {-webkit-transform: rotate(5deg);top:2px;}
+    48%   {-webkit-transform: rotate(3deg);top:1px;}
+    50%   {-webkit-transform: rotate(1deg);top:0px;}
+    52%   {-webkit-transform: rotate(-1deg);top:1px;}
+    54%   {-webkit-transform: rotate(-3deg);top:2px;}
+    56%   {-webkit-transform: rotate(-5deg);top:3px;}
+    58%   {-webkit-transform: rotate(-7deg);top:4px;}
+    60%   {-webkit-transform: rotate(-9deg);top:5px;}
+    62%   {-webkit-transform: rotate(-11deg);top:6px;}
+    64%   {-webkit-transform: rotate(-13deg);top:7px;}
+    66%   {-webkit-transform: rotate(-15deg);top:8px;}
+    68%   {-webkit-transform: rotate(-17deg);top:9px;}
+    70%   {-webkit-transform: rotate(-19deg);top:10px;}
+    72%   {-webkit-transform: rotate(-21deg);top:11px;}
+    74%   {-webkit-transform: rotate(-23deg);top:12px;}
+    76%   {-webkit-transform: rotate(-21deg);top:13px;}
+    78%   {-webkit-transform: rotate(-19deg);top:14px;}
+    80%   {-webkit-transform: rotate(-17deg);top:13px;}
+    82%   {-webkit-transform: rotate(-15deg);top:12px;}
+    84%   {-webkit-transform: rotate(-13deg);top:11px;}
+    86%   {-webkit-transform: rotate(-11deg);top:9px;}
+    88%   {-webkit-transform: rotate(-9deg);top:8px;}
+    90%   {-webkit-transform: rotate(-7deg);top:7px;}
+    92%   {-webkit-transform: rotate(-5deg);top:6px;}
+    94%   {-webkit-transform: rotate(-3deg);top:5px;}
+    96%   {-webkit-transform: rotate(-1deg);top:4px;}
+    98%   {-webkit-transform: rotate(0deg);top:3px;}
+    100%   {-webkit-transform: rotate(1deg);top:2px;}
+}
+
+
+
+@-webkit-keyframes balloon4 {
+    0%   {-webkit-transform: rotate(0deg);top:0px;}
+    1%   {-webkit-transform: rotate(1deg);top:1px;}
+    2%   {-webkit-transform: rotate(2deg);top:2px;}
+    3%   {-webkit-transform: rotate(3deg);top:3px;}
+    4%   {-webkit-transform: rotate(4deg);top:4px;}
+    5%   {-webkit-transform: rotate(5deg);top:5px;}
+    6%   {-webkit-transform: rotate(6deg);top:6px;}
+    7%   {-webkit-transform: rotate(7deg);top:7px;}
+    8%   {-webkit-transform: rotate(8deg);top:8px;}
+    9%   {-webkit-transform: rotate(9deg);top:9px;}
+    10%   {-webkit-transform: rotate(10deg);top:10px;}
+    11%   {-webkit-transform: rotate(9deg);top:9px;}
+    12%   {-webkit-transform: rotate(8deg);top:8px;}
+    13%   {-webkit-transform: rotate(7deg);top:7px;}
+    14%   {-webkit-transform: rotate(6deg);top:6px;}
+    15%   {-webkit-transform: rotate(5deg);top:5px;}
+    16%   {-webkit-transform: rotate(4deg);top:4px;}
+    17%   {-webkit-transform: rotate(3deg);top:3px;}
+    18%   {-webkit-transform: rotate(2deg);top:2px;}
+    19%   {-webkit-transform: rotate(1deg);top:1px;}
+    20%   {-webkit-transform: rotate(0deg);top:0px;}
+    21%   {-webkit-transform: rotate(-1deg);top:1px;}
+    22%   {-webkit-transform: rotate(-2deg);top:2px;}
+    23%   {-webkit-transform: rotate(-3deg);top:3px;}
+    24%   {-webkit-transform: rotate(-4deg);top:4px;}
+    25%   {-webkit-transform: rotate(-5deg);top:5px;}
+    26%   {-webkit-transform: rotate(-6deg);top:6px;}
+    27%   {-webkit-transform: rotate(-7deg);top:7px;}
+    28%   {-webkit-transform: rotate(-8deg);top:8px;}
+    29%   {-webkit-transform: rotate(-9deg);top:9px;}
+    30%   {-webkit-transform: rotate(-10deg);top:10px;}
+    31%   {-webkit-transform: rotate(-9deg);top:9px;}
+    32%   {-webkit-transform: rotate(-8deg);top:8px;}
+    33%   {-webkit-transform: rotate(-7deg);top:7px;}
+    34%   {-webkit-transform: rotate(-6deg);top:6px;}
+    35%   {-webkit-transform: rotate(-5deg);top:5px;}
+    36%   {-webkit-transform: rotate(-4deg);top:4px;}
+    37%   {-webkit-transform: rotate(-3deg);top:3px;}
+    38%   {-webkit-transform: rotate(-2deg);top:2px;}
+    39%   {-webkit-transform: rotate(-1deg);top:1px;}
+    40%   {-webkit-transform: rotate(0deg);top:0px;}
+    41%   {-webkit-transform: rotate(1deg);top:1px;}
+    42%   {-webkit-transform: rotate(2deg);top:2px;}
+    43%   {-webkit-transform: rotate(3deg);top:3px;}
+    44%   {-webkit-transform: rotate(4deg);top:4px;}
+    45%   {-webkit-transform: rotate(5deg);top:5px;}
+    46%   {-webkit-transform: rotate(6deg);top:6px;}
+    47%   {-webkit-transform: rotate(7deg);top:7px;}
+    48%   {-webkit-transform: rotate(8deg);top:8px;}
+    49%   {-webkit-transform: rotate(9deg);top:9px;}
+    50%   {-webkit-transform: rotate(10deg);top:10px;}
+    51%   {-webkit-transform: rotate(9deg);top:9px;}
+    52%   {-webkit-transform: rotate(8deg);top:8px;}
+    53%   {-webkit-transform: rotate(7deg);top:7px;}
+    54%   {-webkit-transform: rotate(6deg);top:6px;}
+    55%   {-webkit-transform: rotate(5deg);top:5px;}
+    56%   {-webkit-transform: rotate(4deg);top:4px;}
+    57%   {-webkit-transform: rotate(3deg);top:3px;}
+    58%   {-webkit-transform: rotate(2deg);top:2px;}
+    59%   {-webkit-transform: rotate(1deg);top:1px;}
+    60%   {-webkit-transform: rotate(0deg);top:0px;}
+    61%   {-webkit-transform: rotate(-1deg);top:1px;}
+    62%   {-webkit-transform: rotate(-2deg);top:2px;}
+    63%   {-webkit-transform: rotate(-3deg);top:3px;}
+    64%   {-webkit-transform: rotate(-4deg);top:4px;}
+    65%   {-webkit-transform: rotate(-5deg);top:5px;}
+    66%   {-webkit-transform: rotate(-6deg);top:6px;}
+    67%   {-webkit-transform: rotate(-7deg);top:7px;}
+    68%   {-webkit-transform: rotate(-8deg);top:8px;}
+    69%   {-webkit-transform: rotate(-9deg);top:9px;}
+    70%   {-webkit-transform: rotate(-10deg);top:10px;}
+    71%   {-webkit-transform: rotate(-9deg);top:9px;}
+    72%   {-webkit-transform: rotate(-8deg);top:8px;}
+    73%   {-webkit-transform: rotate(-7deg);top:7px;}
+    74%   {-webkit-transform: rotate(-6deg);top:6px;}
+    75%   {-webkit-transform: rotate(-5deg);top:5px;}
+    76%   {-webkit-transform: rotate(-4deg);top:4px;}
+    77%   {-webkit-transform: rotate(-3deg);top:3px;}
+    78%   {-webkit-transform: rotate(-2deg);top:2px;}
+    79%   {-webkit-transform: rotate(-1deg);top:1px;}
+    80%   {-webkit-transform: rotate(0deg);top:0px;}
+    81%   {-webkit-transform: rotate(1deg);top:1px;}
+    82%   {-webkit-transform: rotate(2deg);top:2px;}
+    83%   {-webkit-transform: rotate(3deg);top:3px;}
+    84%   {-webkit-transform: rotate(4deg);top:4px;}
+    85%   {-webkit-transform: rotate(5deg);top:5px;}
+    86%   {-webkit-transform: rotate(6deg);top:6px;}
+    87%   {-webkit-transform: rotate(7deg);top:7px;}
+    88%   {-webkit-transform: rotate(8deg);top:8px;}
+    89%   {-webkit-transform: rotate(9deg);top:9px;}
+    90%   {-webkit-transform: rotate(10deg);top:10px;}
+    91%   {-webkit-transform: rotate(9deg);top:9px;}
+    92%   {-webkit-transform: rotate(8deg);top:8px;}
+    93%   {-webkit-transform: rotate(7deg);top:7px;}
+    94%   {-webkit-transform: rotate(6deg);top:6px;}
+    95%   {-webkit-transform: rotate(5deg);top:5px;}
+    96%   {-webkit-transform: rotate(4deg);top:4px;}
+    97%   {-webkit-transform: rotate(3deg);top:3px;}
+    98%   {-webkit-transform: rotate(2deg);top:2px;}
+    99%   {-webkit-transform: rotate(1deg);top:1px;}
+    100%   {-webkit-transform: rotate(0deg);top:0px;}
+}
+
+/* Standard syntax */
+@keyframes balloon4 {
+    0%   {-webkit-transform: rotate(0deg);top:0px;}
+    1%   {-webkit-transform: rotate(1deg);top:1px;}
+    2%   {-webkit-transform: rotate(2deg);top:2px;}
+    3%   {-webkit-transform: rotate(3deg);top:3px;}
+    4%   {-webkit-transform: rotate(4deg);top:4px;}
+    5%   {-webkit-transform: rotate(5deg);top:5px;}
+    6%   {-webkit-transform: rotate(6deg);top:6px;}
+    7%   {-webkit-transform: rotate(7deg);top:7px;}
+    8%   {-webkit-transform: rotate(8deg);top:8px;}
+    9%   {-webkit-transform: rotate(9deg);top:9px;}
+    10%   {-webkit-transform: rotate(10deg);top:10px;}
+    11%   {-webkit-transform: rotate(9deg);top:9px;}
+    12%   {-webkit-transform: rotate(8deg);top:8px;}
+    13%   {-webkit-transform: rotate(7deg);top:7px;}
+    14%   {-webkit-transform: rotate(6deg);top:6px;}
+    15%   {-webkit-transform: rotate(5deg);top:5px;}
+    16%   {-webkit-transform: rotate(4deg);top:4px;}
+    17%   {-webkit-transform: rotate(3deg);top:3px;}
+    18%   {-webkit-transform: rotate(2deg);top:2px;}
+    19%   {-webkit-transform: rotate(1deg);top:1px;}
+    20%   {-webkit-transform: rotate(0deg);top:0px;}
+    21%   {-webkit-transform: rotate(-1deg);top:1px;}
+    22%   {-webkit-transform: rotate(-2deg);top:2px;}
+    23%   {-webkit-transform: rotate(-3deg);top:3px;}
+    24%   {-webkit-transform: rotate(-4deg);top:4px;}
+    25%   {-webkit-transform: rotate(-5deg);top:5px;}
+    26%   {-webkit-transform: rotate(-6deg);top:6px;}
+    27%   {-webkit-transform: rotate(-7deg);top:7px;}
+    28%   {-webkit-transform: rotate(-8deg);top:8px;}
+    29%   {-webkit-transform: rotate(-9deg);top:9px;}
+    30%   {-webkit-transform: rotate(-10deg);top:10px;}
+    31%   {-webkit-transform: rotate(-9deg);top:9px;}
+    32%   {-webkit-transform: rotate(-8deg);top:8px;}
+    33%   {-webkit-transform: rotate(-7deg);top:7px;}
+    34%   {-webkit-transform: rotate(-6deg);top:6px;}
+    35%   {-webkit-transform: rotate(-5deg);top:5px;}
+    36%   {-webkit-transform: rotate(-4deg);top:4px;}
+    37%   {-webkit-transform: rotate(-3deg);top:3px;}
+    38%   {-webkit-transform: rotate(-2deg);top:2px;}
+    39%   {-webkit-transform: rotate(-1deg);top:1px;}
+    40%   {-webkit-transform: rotate(0deg);top:0px;}
+    41%   {-webkit-transform: rotate(1deg);top:1px;}
+    42%   {-webkit-transform: rotate(2deg);top:2px;}
+    43%   {-webkit-transform: rotate(3deg);top:3px;}
+    44%   {-webkit-transform: rotate(4deg);top:4px;}
+    45%   {-webkit-transform: rotate(5deg);top:5px;}
+    46%   {-webkit-transform: rotate(6deg);top:6px;}
+    47%   {-webkit-transform: rotate(7deg);top:7px;}
+    48%   {-webkit-transform: rotate(8deg);top:8px;}
+    49%   {-webkit-transform: rotate(9deg);top:9px;}
+    50%   {-webkit-transform: rotate(10deg);top:10px;}
+    51%   {-webkit-transform: rotate(9deg);top:9px;}
+    52%   {-webkit-transform: rotate(8deg);top:8px;}
+    53%   {-webkit-transform: rotate(7deg);top:7px;}
+    54%   {-webkit-transform: rotate(6deg);top:6px;}
+    55%   {-webkit-transform: rotate(5deg);top:5px;}
+    56%   {-webkit-transform: rotate(4deg);top:4px;}
+    57%   {-webkit-transform: rotate(3deg);top:3px;}
+    58%   {-webkit-transform: rotate(2deg);top:2px;}
+    59%   {-webkit-transform: rotate(1deg);top:1px;}
+    60%   {-webkit-transform: rotate(0deg);top:0px;}
+    61%   {-webkit-transform: rotate(-1deg);top:1px;}
+    62%   {-webkit-transform: rotate(-2deg);top:2px;}
+    63%   {-webkit-transform: rotate(-3deg);top:3px;}
+    64%   {-webkit-transform: rotate(-4deg);top:4px;}
+    65%   {-webkit-transform: rotate(-5deg);top:5px;}
+    66%   {-webkit-transform: rotate(-6deg);top:6px;}
+    67%   {-webkit-transform: rotate(-7deg);top:7px;}
+    68%   {-webkit-transform: rotate(-8deg);top:8px;}
+    69%   {-webkit-transform: rotate(-9deg);top:9px;}
+    70%   {-webkit-transform: rotate(-10deg);top:10px;}
+    71%   {-webkit-transform: rotate(-9deg);top:9px;}
+    72%   {-webkit-transform: rotate(-8deg);top:8px;}
+    73%   {-webkit-transform: rotate(-7deg);top:7px;}
+    74%   {-webkit-transform: rotate(-6deg);top:6px;}
+    75%   {-webkit-transform: rotate(-5deg);top:5px;}
+    76%   {-webkit-transform: rotate(-4deg);top:4px;}
+    77%   {-webkit-transform: rotate(-3deg);top:3px;}
+    78%   {-webkit-transform: rotate(-2deg);top:2px;}
+    79%   {-webkit-transform: rotate(-1deg);top:1px;}
+    80%   {-webkit-transform: rotate(0deg);top:0px;}
+    81%   {-webkit-transform: rotate(1deg);top:1px;}
+    82%   {-webkit-transform: rotate(2deg);top:2px;}
+    83%   {-webkit-transform: rotate(3deg);top:3px;}
+    84%   {-webkit-transform: rotate(4deg);top:4px;}
+    85%   {-webkit-transform: rotate(5deg);top:5px;}
+    86%   {-webkit-transform: rotate(6deg);top:6px;}
+    87%   {-webkit-transform: rotate(7deg);top:7px;}
+    88%   {-webkit-transform: rotate(8deg);top:8px;}
+    89%   {-webkit-transform: rotate(9deg);top:9px;}
+    90%   {-webkit-transform: rotate(10deg);top:10px;}
+    91%   {-webkit-transform: rotate(9deg);top:9px;}
+    92%   {-webkit-transform: rotate(8deg);top:8px;}
+    93%   {-webkit-transform: rotate(7deg);top:7px;}
+    94%   {-webkit-transform: rotate(6deg);top:6px;}
+    95%   {-webkit-transform: rotate(5deg);top:5px;}
+    96%   {-webkit-transform: rotate(4deg);top:4px;}
+    97%   {-webkit-transform: rotate(3deg);top:3px;}
+    98%   {-webkit-transform: rotate(2deg);top:2px;}
+    99%   {-webkit-transform: rotate(1deg);top:1px;}
+    100%   {-webkit-transform: rotate(0deg);top:0px;}
+}
+
+@-webkit-keyframes balloon5 {
+    0%   {-webkit-transform: rotate(0deg);left:1px;}
+    2%   {-webkit-transform: rotate(3deg);left:3px;}
+    4%   {-webkit-transform: rotate(6deg);left:5px;}
+    6%   {-webkit-transform: rotate(9deg);left:7px;}
+    8%   {-webkit-transform: rotate(12deg);left:9px;}
+    10%   {-webkit-transform: rotate(15deg);left:11px;}
+    12%   {-webkit-transform: rotate(18deg);left:13px;}
+    14%   {-webkit-transform: rotate(15deg);left:15px;}
+    16%   {-webkit-transform: rotate(12deg);left:17px;}
+    18%   {-webkit-transform: rotate(9deg);left:19px;}
+    19%   {-webkit-transform: rotate(6deg);left:21px;}
+    20%   {-webkit-transform: rotate(3deg);left:23px;}
+    22%   {-webkit-transform: rotate(0deg);left:25px;}
+    24%   {-webkit-transform: rotate(-3deg);left:23px;}
+    26%   {-webkit-transform: rotate(-6deg);left:21px;}
+    28%   {-webkit-transform: rotate(-9deg);left:19px;}
+    30%   {-webkit-transform: rotate(-12deg);left:17px;}
+    32%   {-webkit-transform: rotate(-15deg);left:15px;}
+    34%   {-webkit-transform: rotate(-18deg);left:13px;}
+    36%   {-webkit-transform: rotate(-15deg);left:11px;}
+    38%   {-webkit-transform: rotate(-12deg);left:9px;}
+    40%   {-webkit-transform: rotate(-9deg);left:7px;}
+    42%   {-webkit-transform: rotate(-6deg);left:5px;}
+    44%   {-webkit-transform: rotate(-3deg);left:3px;}
+    46%   {-webkit-transform: rotate(-0deg);left:1px;}
+    48%   {-webkit-transform: rotate(3deg);left:3px;}
+    50%   {-webkit-transform: rotate(6deg);left:5px;}
+    52%   {-webkit-transform: rotate(9deg);left:7px;}
+    54%   {-webkit-transform: rotate(12deg);left:9px;}
+    56%   {-webkit-transform: rotate(15deg);left:11px;}
+    58%   {-webkit-transform: rotate(18deg);left:13px;}
+    60%   {-webkit-transform: rotate(15deg);left:15px;}
+    62%   {-webkit-transform: rotate(12deg);left:17px;}
+    64%   {-webkit-transform: rotate(9deg);left:19px;}
+    66%   {-webkit-transform: rotate(6deg);left:21px;}
+    68%   {-webkit-transform: rotate(3deg);left:23px;}
+    70%   {-webkit-transform: rotate(0deg);left:25px;}
+    72%   {-webkit-transform: rotate(-3deg);left:23px;}
+    74%   {-webkit-transform: rotate(-6deg);left:21px;}
+    76%   {-webkit-transform: rotate(-9deg);left:19px;}
+    78%   {-webkit-transform: rotate(-12deg);left:17px;}
+    80%   {-webkit-transform: rotate(-15deg);left:15px;}
+    82%   {-webkit-transform: rotate(-18deg);left:13px;}
+    84%   {-webkit-transform: rotate(-15deg);left:11px;}
+    86%   {-webkit-transform: rotate(-12deg);left:9px;}
+    88%   {-webkit-transform: rotate(-9deg);left:7px;}
+    90%   {-webkit-transform: rotate(-6deg);left:5px;}
+    92%   {-webkit-transform: rotate(-3deg);left:3px;}
+    94%   {-webkit-transform: rotate(0deg);left:1px;}
+    96%   {-webkit-transform: rotate(0deg);left:1px;}
+    98%   {-webkit-transform: rotate(0deg);left:1px;}
+    100%   {-webkit-transform: rotate(0deg);left:1px;}
+}
+
+/* Standard syntax */
+@keyframes balloon5 {
+    0%   {-webkit-transform: rotate(0deg);left:1px;}
+    2%   {-webkit-transform: rotate(3deg);left:3px;}
+    4%   {-webkit-transform: rotate(6deg);left:5px;}
+    6%   {-webkit-transform: rotate(9deg);left:7px;}
+    8%   {-webkit-transform: rotate(12deg);left:9px;}
+    10%   {-webkit-transform: rotate(15deg);left:11px;}
+    12%   {-webkit-transform: rotate(18deg);left:13px;}
+    14%   {-webkit-transform: rotate(15deg);left:15px;}
+    16%   {-webkit-transform: rotate(12deg);left:17px;}
+    18%   {-webkit-transform: rotate(9deg);left:19px;}
+    19%   {-webkit-transform: rotate(6deg);left:21px;}
+    20%   {-webkit-transform: rotate(3deg);left:23px;}
+    22%   {-webkit-transform: rotate(0deg);left:25px;}
+    24%   {-webkit-transform: rotate(-3deg);left:23px;}
+    26%   {-webkit-transform: rotate(-6deg);left:21px;}
+    28%   {-webkit-transform: rotate(-9deg);left:19px;}
+    30%   {-webkit-transform: rotate(-12deg);left:17px;}
+    32%   {-webkit-transform: rotate(-15deg);left:15px;}
+    34%   {-webkit-transform: rotate(-18deg);left:13px;}
+    36%   {-webkit-transform: rotate(-15deg);left:11px;}
+    38%   {-webkit-transform: rotate(-12deg);left:9px;}
+    40%   {-webkit-transform: rotate(-9deg);left:7px;}
+    42%   {-webkit-transform: rotate(-6deg);left:5px;}
+    44%   {-webkit-transform: rotate(-3deg);left:3px;}
+    46%   {-webkit-transform: rotate(-0deg);left:1px;}
+    48%   {-webkit-transform: rotate(3deg);left:3px;}
+    50%   {-webkit-transform: rotate(6deg);left:5px;}
+    52%   {-webkit-transform: rotate(9deg);left:7px;}
+    54%   {-webkit-transform: rotate(12deg);left:9px;}
+    56%   {-webkit-transform: rotate(15deg);left:11px;}
+    58%   {-webkit-transform: rotate(18deg);left:13px;}
+    60%   {-webkit-transform: rotate(15deg);left:15px;}
+    62%   {-webkit-transform: rotate(12deg);left:17px;}
+    64%   {-webkit-transform: rotate(9deg);left:19px;}
+    66%   {-webkit-transform: rotate(6deg);left:21px;}
+    68%   {-webkit-transform: rotate(3deg);left:23px;}
+    70%   {-webkit-transform: rotate(0deg);left:25px;}
+    72%   {-webkit-transform: rotate(-3deg);left:23px;}
+    74%   {-webkit-transform: rotate(-6deg);left:21px;}
+    76%   {-webkit-transform: rotate(-9deg);left:19px;}
+    78%   {-webkit-transform: rotate(-12deg);left:17px;}
+    80%   {-webkit-transform: rotate(-15deg);left:15px;}
+    82%   {-webkit-transform: rotate(-18deg);left:13px;}
+    84%   {-webkit-transform: rotate(-15deg);left:11px;}
+    86%   {-webkit-transform: rotate(-12deg);left:9px;}
+    88%   {-webkit-transform: rotate(-9deg);left:7px;}
+    90%   {-webkit-transform: rotate(-6deg);left:5px;}
+    92%   {-webkit-transform: rotate(-3deg);left:3px;}
+    94%   {-webkit-transform: rotate(0deg);left:1px;}
+    96%   {-webkit-transform: rotate(0deg);left:1px;}
+    98%   {-webkit-transform: rotate(0deg);left:1px;}
+    100%   {-webkit-transform: rotate(0deg);left:1px;}
+}
+
+@-webkit-keyframes balloon5 {
+    0%   {left:1px;}
+    2%   {left:3px;}
+    4%   {left:5px;}
+    6%   {left:7px;}
+    8%   {left:9px;}
+    10%   {left:11px;}
+    12%   {left:13px;}
+    14%   {left:15px;}
+    16%   {left:17px;}
+    18%   {left:19px;}
+    19%   {left:21px;}
+    20%   {left:23px;}
+    22%   {left:25px;}
+    24%   {left:23px;}
+    26%   {left:21px;}
+    28%   {left:19px;}
+    30%   {left:17px;}
+    32%   {left:15px;}
+    34%   {left:13px;}
+    36%   {left:11px;}
+    38%   {left:9px;}
+    40%   {left:7px;}
+    42%   {left:5px;}
+    44%   {left:3px;}
+    46%   {left:1px;}
+    48%   {left:3px;}
+    50%   {left:5px;}
+    52%   {left:7px;}
+    54%   {left:9px;}
+    56%   {left:11px;}
+    58%   {left:13px;}
+    60%   {left:15px;}
+    62%   {left:17px;}
+    64%   {left:19px;}
+    66%   {left:21px;}
+    68%   {left:23px;}
+    70%   {left:25px;}
+    72%   {left:23px;}
+    74%   {left:21px;}
+    76%   {left:19px;}
+    78%   {left:17px;}
+    80%   {left:15px;}
+    82%   {left:13px;}
+    84%   {left:11px;}
+    86%   {left:9px;}
+    88%   {left:7px;}
+    90%   {left:5px;}
+    92%   {left:3px;}
+    94%   {left:1px;}
+    96%   {left:1px;}
+    98%   {left:1px;}
+    100%   {left:1px;}
+}
+
+/* Standard syntax */
+@keyframes balloon5 {
+    0%   {left:1px;}
+    2%   {left:3px;}
+    4%   {left:5px;}
+    6%   {left:7px;}
+    8%   {left:9px;}
+    10%   {left:11px;}
+    12%   {left:13px;}
+    14%   {left:15px;}
+    16%   {left:17px;}
+    18%   {left:19px;}
+    19%   {left:21px;}
+    20%   {left:23px;}
+    22%   {left:25px;}
+    24%   {left:23px;}
+    26%   {left:21px;}
+    28%   {left:19px;}
+    30%   {left:17px;}
+    32%   {left:15px;}
+    34%   {left:13px;}
+    36%   {left:11px;}
+    38%   {left:9px;}
+    40%   {left:7px;}
+    42%   {left:5px;}
+    44%   {left:3px;}
+    46%   {left:1px;}
+    48%   {left:3px;}
+    50%   {left:5px;}
+    52%   {left:7px;}
+    54%   {left:9px;}
+    56%   {left:11px;}
+    58%   {left:13px;}
+    60%   {left:15px;}
+    62%   {left:17px;}
+    64%   {left:19px;}
+    66%   {left:21px;}
+    68%   {left:23px;}
+    70%   {left:25px;}
+    72%   {left:23px;}
+    74%   {left:21px;}
+    76%   {left:19px;}
+    78%   {left:17px;}
+    80%   {left:15px;}
+    82%   {left:13px;}
+    84%   {left:11px;}
+    86%   {left:9px;}
+    88%   {left:7px;}
+    90%   {left:5px;}
+    92%   {left:3px;}
+    94%   {left:1px;}
+    96%   {left:1px;}
+    98%   {left:1px;}
+    100%   {left:1px;}
+}
+
+@media only screen and (max-width: 510px){
+    
+    .balloon{
+        box-sizing: border-box;
+        width: 50%;
+        height: 40px;
+        border-radius: 0;
+    }
+    
+    .balloon .balloon-title {
+        padding: 0px;
+    }
+}
+
+
+
+
+
+
