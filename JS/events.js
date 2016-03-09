@@ -11,7 +11,9 @@
 		fixed_custom_navbar_class = "navbar-fixed-custom",
 		hide_class = "hide",
 		go_to_top_data = "go-to-top",
-		introduction_data = "introduction";
+		introduction_header,
+        isAccordianDisplayed = false,
+        all_sections;
 
 	function setUp(){
 		cacheDOMElements()
@@ -27,6 +29,8 @@
 		hobbies_section = $("#hobbies");
 		contact_section = $("#contact");
 		go_to_top = $("#go-to-top");
+        all_sections = $("section");
+        introduction_header = $("#introduction");
 	}
 
 	function defineAutoSrollFeature(){
@@ -34,17 +38,24 @@
 			var $target_ele = $(event.target);
         	scroll_to_target_section(this);
         	event.preventDefault();
+            if(isAccordianDisplayed){
+                isAccordianDisplayed = false;
+                navbar.find('.navbar-right').removeClass("block");
+            }
     	});
 	}
 
 	function collapseNavbar(){
+        if(isAccordianDisplayed){
+            checkForAccordianVisibility(undefined);
+        }
 		if(navbar.offset().top > 50 ){
 			navbar.addClass(fixed_custom_navbar_class);
-			navbar_header.html("<i class='fa fa-user'></i>Abhijeet Patil");
+			navbar_header.removeClass("hide");
 			go_to_top.removeClass(hide_class);
 		}else{
 			navbar.removeClass(fixed_custom_navbar_class);
-            navbar_header.html("");
+            navbar_header.addClass("hide");
 			go_to_top.addClass(hide_class);
 		}
 	}
@@ -53,10 +64,47 @@
 		var $anchor = $(event_target);
         $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top}, 1500, 'easeInOutExpo');
 	}
+    
+    function checkForAccordianVisibility(event){
+        navbar.find('.navbar-right').toggleClass("block");
+        isAccordianDisplayed = !isAccordianDisplayed;
+        if(navbar_header.hasClass("hide")){
+            if(isAccordianDisplayed){
+                navbar.addClass(fixed_custom_navbar_class);
+            }else{
+                navbar.removeClass(fixed_custom_navbar_class);
+            }
+        }
+        if(event){
+            event.preventDefault();
+        }
+    }
+    
+    
+    function defineAccordianBehaviour(){
+        
+        navbar.find('.navbar-accordian').bind('click', function(event) {
+			checkForAccordianVisibility(event);
+    	});
+        
+        introduction_header.bind('click', function(event) {
+            if(isAccordianDisplayed){
+                checkForAccordianVisibility(event);
+            }
+    	});
+        
+        all_sections.bind('click', function(event) {
+            if(isAccordianDisplayed){
+                checkForAccordianVisibility(event);
+            }
+    	});
+        
+    }
 	
 	function defineEvents(){
 		$(window).scroll(collapseNavbar);
 		defineAutoSrollFeature();
+        defineAccordianBehaviour();
 	}
 
 	$(setUp);

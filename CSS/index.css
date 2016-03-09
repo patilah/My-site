@@ -7,6 +7,11 @@
 	display: inline-block;
 }
 
+.block{
+    display: block !important;
+    transition: display 3s ease-in-out; 
+}
+
 .large-padding{
 	padding: 100px 0px;
 }
@@ -19,7 +24,11 @@ body{
     text-align: center;
 }
 
-.nav-container div{
+.navbar{
+    color: #42dca3;
+}
+
+.nav-container .navbar-element{
 	display: inline-block;
 }
 
@@ -27,9 +36,12 @@ body{
 	font-family:cursive;
 	font-size: 35px;
 	padding: 20px 0px 0px 50px;
-	color: #42dca3;
 	float: left;
 	letter-spacing: 3px;
+}
+
+.navbar-accordian{
+    display: none;
 }
 
 .navbar-right{
@@ -41,7 +53,7 @@ body{
 
 .navbar-right a{
     text-decoration: none;
-	color: #42dca3;
+    color: #42dca3;
     float: left;
 	padding: 10px;
 }
@@ -295,11 +307,30 @@ section{
 
 
 @media only screen and (max-width: 510px){
-    .navbar-right{
-        font-size: 12px;
-    }
+    
     .navbar-header{
         font-size: 20px;
+    }
+    
+    .nav-container .navbar-right{
+        font-size: 18px;
+        display: none;
+    }
+    
+    .navbar-right a{
+        margin: auto;
+        display: block;
+        float: none;
+        box-sizing: border-box;
+        width: 69%;
+    }
+    
+    .navbar-accordian{
+        font-size: 30px;
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 0 10px 0 0;
     }
     
     #introduction h1{
