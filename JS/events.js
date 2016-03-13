@@ -2,6 +2,8 @@
 
 	var navbar,
 		navbar_header,
+        navbar_right,
+        navbar_accordian,
 		about_section,
 		technical_section,
 		career_section,
@@ -23,6 +25,8 @@
 	function cacheDOMElements(){
 		navbar = $(".navbar");
 		navbar_header = navbar.find(".navbar-header");
+        navbar_right = navbar.find(".navbar-right");
+        navbar_accordian = navbar.find(".navbar-accordian");
 		about_section = $("#about");
 		technical_section = $("#technical");
 		career_section = $("#career");
@@ -39,8 +43,11 @@
         	scroll_to_target_section(this);
         	event.preventDefault();
             if(isAccordianDisplayed){
-                isAccordianDisplayed = false;
-                navbar.find('.navbar-right').removeClass("block");
+                isAccordianDisplayed = !isAccordianDisplayed;
+                navbar_right.toggleClass("block");
+                if(navbar_header.hasClass(hide_class)){
+                	navbar.removeClass(fixed_custom_navbar_class);
+                }
             }
     	});
 	}
@@ -51,11 +58,11 @@
         }
 		if(navbar.offset().top > 50 ){
 			navbar.addClass(fixed_custom_navbar_class);
-			navbar_header.removeClass("hide");
+			navbar_header.removeClass(hide_class);
 			go_to_top.removeClass(hide_class);
 		}else{
 			navbar.removeClass(fixed_custom_navbar_class);
-            navbar_header.addClass("hide");
+            navbar_header.addClass(hide_class);
 			go_to_top.addClass(hide_class);
 		}
 	}
@@ -66,9 +73,9 @@
 	}
     
     function checkForAccordianVisibility(event){
-        navbar.find('.navbar-right').toggleClass("block");
         isAccordianDisplayed = !isAccordianDisplayed;
-        if(navbar_header.hasClass("hide")){
+        navbar_right.toggleClass("block");
+        if(navbar_header.hasClass(hide_class)){
             if(isAccordianDisplayed){
                 navbar.addClass(fixed_custom_navbar_class);
             }else{
@@ -82,23 +89,19 @@
     
     
     function defineAccordianBehaviour(){
-        
-        navbar.find('.navbar-accordian').bind('click', function(event) {
+        navbar_accordian.bind('click', function(event) {
 			checkForAccordianVisibility(event);
-    	});
-        
+    	});  
         introduction_header.bind('click', function(event) {
             if(isAccordianDisplayed){
                 checkForAccordianVisibility(event);
             }
-    	});
-        
+    	});   
         all_sections.bind('click', function(event) {
             if(isAccordianDisplayed){
                 checkForAccordianVisibility(event);
             }
     	});
-        
     }
 	
 	function defineEvents(){

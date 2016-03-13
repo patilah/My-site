@@ -235,10 +235,6 @@ section{
         font-size: 24px;
     }
     
-    .btn-circle{
-        font-size: 30px;
-    }
-    
     .section-title{
         padding: 100px 0px 0px 0px;
         font-size: 40px;
@@ -252,6 +248,12 @@ section{
 }
 
 @media only screen and (max-width: 750px){
+    .btn-circle{
+        font-size: 35px;
+        height: 60px;
+        width: 60px;
+    }
+    
     .hobby-element, .hobby-element img{
         max-width: 65%;
     }
@@ -260,13 +262,6 @@ section{
         padding: 0px;
     }
 }
-
-@media only screen and (max-width: 610px){
-    .hobby-element{
-        margin-top: 100px;
-    }
-}
-
 
 @media only screen and (max-width: 678px){
     .navbar-right{
@@ -286,7 +281,10 @@ section{
     }
     
     .btn-circle{
-        font-size: 25px;
+        font-size: 30px;
+        height: 55px;
+        width: 55px;
+        padding-top: 8px;
     }
     
     .section-title{
@@ -302,6 +300,12 @@ section{
     .custom-arraow-up{
 	    font-size: 40px;
         line-height: 40px;
+    }
+}
+
+@media only screen and (max-width: 610px){
+    .hobby-element{
+        margin-top: 100px;
     }
 }
 
@@ -342,9 +346,10 @@ section{
     }
     
     .btn-circle{
-        height: 45px;
-        width: 45px; 
-        font-size: 20px;
+        height: 50px;
+        width: 50px; 
+        font-size: 30px;
+        padding-top: 7px;
     }
     
     .section-title{
