@@ -2,7 +2,7 @@
 
 	var navbar,
 		navbar_header,
-        navbar_right,
+        navbar_navigations,
         navbar_accordian,
 		about_section,
 		technical_section,
@@ -25,7 +25,7 @@
 	function cacheDOMElements(){
 		navbar = $(".navbar");
 		navbar_header = navbar.find(".navbar-header");
-        navbar_right = navbar.find(".navbar-right");
+        navbar_navigations = navbar.find(".navbar-navigations");
         navbar_accordian = navbar.find(".navbar-accordian");
 		about_section = $("#about");
 		technical_section = $("#technical");
@@ -44,7 +44,7 @@
         	event.preventDefault();
             if(isAccordianDisplayed){
                 isAccordianDisplayed = !isAccordianDisplayed;
-                navbar_right.toggleClass("block");
+                navbar_navigations.toggleClass("navbar-navigation-block-display");
                 if(navbar_header.hasClass(hide_class)){
                 	navbar.removeClass(fixed_custom_navbar_class);
                 }
@@ -74,7 +74,7 @@
     
     function checkForAccordianVisibility(event){
         isAccordianDisplayed = !isAccordianDisplayed;
-        navbar_right.toggleClass("block");
+        navbar_navigations.toggleClass("navbar-navigation-block-display");
         if(navbar_header.hasClass(hide_class)){
             if(isAccordianDisplayed){
                 navbar.addClass(fixed_custom_navbar_class);
